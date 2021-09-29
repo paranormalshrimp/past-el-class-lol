@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="253.0" prefWidth="360.0" styleClass="text" stylesheets="@theme.css" xmlns="http://javafx.com/javafx/8.0.202" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.futureclient.installer.e5">
+    <cursor>
+        <Cursor fx:constant="DEFAULT" />
+    </cursor>
+    <children>
+      <Rectangle arcHeight="5.0" height="253.0" stroke="#c3c3c35c" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.0" width="360.0" />
+        <Button fx:id="i" defaultButton="true" layoutX="203.0" layoutY="190.0" mnemonicParsing="false" onAction="#e" prefHeight="25.0" prefWidth="110.0" stylesheets="@theme.css" text="Login" textAlignment="CENTER" wrapText="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+        <TextField fx:id="m" layoutX="109.0" layoutY="123.0" prefHeight="25.0" prefWidth="205.0" style="-fx-focus-color: darkred;" />
+        <PasswordField fx:id="f" layoutX="109.0" layoutY="158.0" prefHeight="25.0" prefWidth="205.0" style="-fx-focus-color: darkred;" />
+        <CheckBox fx:id="saveDetails" disable="true" layoutX="66.0" layoutY="192.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="110.0" selected="true" styleClass="changeText" text="Save credentials" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></CheckBox>
+      <ImageView fitHeight="78.0" fitWidth="166.0" layoutX="112.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo.png" />
+         </image>
+         <rotationAxis>
+            <Point3D />
+         </rotationAxis>
+      </ImageView>
+      <Rectangle fill="DARKRED" height="25.0" layoutX="2.0" layoutY="88.0" stroke="DARKRED" strokeType="INSIDE" strokeWidth="0.0" width="356.0" />
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="9.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login using your forum credentials" textAlignment="CENTER" wrappingWidth="341.99999713897705">
+         <rotationAxis>
+            <Point3D />
+         </rotationAxis>
+      </Text>
+      <Rectangle fill="DARKRED" height="25.0" layoutX="2.0" layoutY="226.0" stroke="DARKRED" strokeType="INSIDE" strokeWidth="0.0" width="356.0" />
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="7.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="© 2020 Future Development" wrappingWidth="200.0">
+         <rotationAxis>
+            <Point3D />
+         </rotationAxis>
+      </Text>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="191.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="https://futureclient.net" textAlignment="RIGHT" wrappingWidth="160.0">
+         <rotationAxis>
+            <Point3D />
+         </rotationAxis>
+      </Text>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="10.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" textAlignment="RIGHT" wrappingWidth="87.00000631064177" />
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="10.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" textAlignment="RIGHT" wrappingWidth="87.00000631064177" />
+      <Text fx:id="closeButton" fill="WHITE" layoutX="345.0" layoutY="13.0" onMouseClicked="#d" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="changeText" text="✕" />
+      <Text fx:id="minimizeButton" fill="WHITE" layoutX="336.0" layoutY="11.0" onMouseClicked="#a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="changeText" text="_" textAlignment="CENTER" underline="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>

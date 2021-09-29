@@ -1,0 +1,63 @@
+.accordion > .titled-pane > .title {
+    -fx-background-color:
+        -fx-box-border,
+        -fx-inner-border,
+        -fx-body-color;
+    -fx-background-insets: -1 0 0 0, 0 1 1 1, 1 2 2 2;
+    -fx-background-radius: 0, 0, 0;
+}
+.accordion > .first-titled-pane > .title {
+    -fx-background-insets: 0, 1, 2;
+}
+.accordion > .titled-pane:focused > .title {
+    -fx-color: -fx-focus-color;
+}
+.accordion > .titled-pane:focused > .accordion:filled:selected {
+    -fx-text-fill: white;
+}
+.accordion > .titled-pane:focused > .title > .arrow-button > .arrow {
+    -fx-background-color: white;
+}
+.accordion > .titled-pane:focused > .titled-pane:collapsed > .title > .arrow-button > .arrow {
+    -fx-background-color: white;
+}
+.accordion > .titled-pane:collapsed:focused > .title {
+    -fx-color: -fx-focus-color;
+}
+.accordion > .titled-pane:expanded:focused > .title {
+    -fx-color: -fx-focus-color;
+}
+.accordion > .titled-pane:hover > .title {
+    -fx-color: -fx-hover-base;
+}
+
+.changeText {
+    -fx-text-fill: white;
+    -fx-fill: white;
+}
+.changeText:hover {
+    -fx-text-fill: gray;
+    -fx-fill: gray;
+}
+
+.check-box .box {
+    -fx-background-color: white;
+}
+
+.button {
+    -fx-text-fill: white;
+    -fx-border-radius: 1;
+    -fx-fill: white;
+    -fx-background-color: linear-gradient(#B50000, #B50000);
+}
+.button:hover {
+    -fx-text-fill: gray;
+    -fx-background-color: linear-gradient(#7b0000, #9b0000);
+}
+.button:pressed {
+    -fx-text-fill: gray;
+    -fx-background-color: linear-gradient(#630000, #630000);
+}
+.button .label {
+    -fx-text-fill: white;
+}

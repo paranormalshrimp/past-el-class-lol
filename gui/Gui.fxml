@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="426.0" prefWidth="512.0" stylesheets="@theme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.futureclient.installer.e5">
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+   <children>
+      <Rectangle arcHeight="5.0" height="426.0" stroke="#c3c3c35c" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.0" width="512.0" />
+      <Rectangle fill="DARKRED" height="25.0" layoutX="2.0" layoutY="88.0" stroke="DARKRED" strokeType="INSIDE" strokeWidth="0.0" width="508.0" />
+      <Text fx:id="w" fill="WHITE" fontSmoothingType="LCD" layoutX="2.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="508.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="j" fill="WHITE" fontSmoothingType="LCD" layoutX="340.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="166.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="s" fill="WHITE" fontSmoothingType="LCD" layoutX="6.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="335.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Rectangle fill="DARKRED" height="25.0" layoutX="2.0" layoutY="399.0" stroke="DARKRED" strokeType="INSIDE" strokeWidth="0.0" width="508.0" />
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="8.0" layoutY="416.0" strokeType="OUTSIDE" strokeWidth="0.0" text="© 2020 Future Development" wrappingWidth="280.0" />
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="283.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0" text="https://futureclient.net" textAlignment="RIGHT" wrappingWidth="221.0" />
+      <Accordion fx:id="q" layoutX="2.0" layoutY="140.0" prefHeight="259.0" prefWidth="508.0" style="-fx-box-border: #8b0000; -fx-body-color: #8b0000; -fx-inner-border: #8b0000;" stylesheets="@theme.css">
+        <panes>
+            <TitledPane fx:id="information" centerShape="false" styleClass="accordion" stylesheets="@theme.css" text="Information" textFill="WHITE">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #000000;">
+                     <children>
+                        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="6.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to the Future client installer. Here you can install the client on your computer and join the Discord. To install the client click on Minecraft below, select the profile you want the client working on and select install." textAlignment="CENTER" wrappingWidth="494.0">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </content>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TitledPane>
+            <TitledPane fx:id="discord" text="Discord" textFill="WHITE">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #000000;">
+                     <children>
+                        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="6.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Join the Discord with the link below. To receive chatting permissions insert your Discord tag below and press the verify button." textAlignment="CENTER" wrappingWidth="494.0">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="n" layoutX="88.0" layoutY="75.0" prefHeight="25.0" prefWidth="205.0" promptText="User#0000" style="-fx-focus-color: darkred;" />
+                        <Button fx:id="x" defaultButton="true" layoutX="308.0" layoutY="75.0" mnemonicParsing="false" onAction="#k" prefHeight="25.0" prefWidth="110.0" stylesheets="@theme.css" text="Verify" textAlignment="CENTER" wrapText="true">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Hyperlink layoutX="155.0" layoutY="40.0" onAction="#m" prefHeight="25.0" prefWidth="200.0" text="https://discord.gg/8FHBrAb" textFill="#3296c8" underline="true">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <effect>
+                              <Bloom />
+                           </effect>
+                        </Hyperlink>
+                     </children>
+                  </AnchorPane>
+               </content>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TitledPane>
+            <TitledPane fx:id="minecraft" text="Minecraft" textFill="WHITE">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #000000;">
+                     <children>
+                        <!--
+                        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="6.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select a Minecraft profile and press Install. The client currently supports 1.8.9, 1.12.2, 1.13.2, 1.14.4 and 1.15.2. The client can be installed ontop of OptiFine, Forge and LiteLoader profiles." textAlignment="CENTER" wrappingWidth="494.0">
+                        -->
+                        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="6.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select a Minecraft profile and press Install. The client currently supports 1.8.9, 1.12.2, 1.13.2 and 1.14.4. The client can be installed ontop of OptiFine, Forge and LiteLoader profiles." textAlignment="CENTER" wrappingWidth="494.0">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="F" defaultButton="true" layoutX="246.0" layoutY="110.0" mnemonicParsing="false" onAction="#l" prefHeight="25.0" prefWidth="110.0" stylesheets="@theme.css" text="Install" textAlignment="CENTER" wrapText="true">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <ChoiceBox fx:id="I" layoutX="25.0" layoutY="110.0" prefHeight="25.0" prefWidth="206.0" style="-fx-background-color: white;" stylesheets="@theme.css" />
+                        <Button fx:id="a" layoutX="371.0" layoutY="110.0" mnemonicParsing="false" onAction="#c" prefHeight="25.0" prefWidth="110.0" stylesheets="@theme.css" text="Uninstall" textAlignment="CENTER" wrapText="true">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                         <TextField fx:id="y" disable="true" editable="false" layoutX="26.0" layoutY="72.0"
+                                    prefHeight="27.0" prefWidth="330.0" style="-fx-focus-color: darkred;"/>
+                        <Button fx:id="D" layoutX="371.0" layoutY="72.0" mnemonicParsing="false" onAction="#b" prefHeight="25.0" prefWidth="110.0" stylesheets="@theme.css" text="Select Folder" textAlignment="CENTER" wrapText="true">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TitledPane>
+        </panes>
+      </Accordion>
+      <Text fx:id="closeButton" fill="WHITE" layoutX="497.0" layoutY="13.0" onMouseClicked="#d" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="changeText" text="✕" />
+      <Text fx:id="minimizeButton" fill="WHITE" layoutX="488.0" layoutY="11.0" onMouseClicked="#a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="changeText" text="_" textAlignment="CENTER" underline="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="78.0" fitWidth="166.0" layoutX="188.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
